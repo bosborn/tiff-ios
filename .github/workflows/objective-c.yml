@@ -1,0 +1,14 @@
+name: Objective-C CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v1
+    - name: Build
+      run: xcodebuild -workspace 'tiff-ios.xcworkspace' -scheme tiff-ios build
