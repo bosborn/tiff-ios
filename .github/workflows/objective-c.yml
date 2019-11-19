@@ -11,4 +11,6 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v1
     - name: Build
-      run: xcodebuild -workspace 'tiff-ios.xcworkspace' -scheme tiff-ios build
+      run: |
+        ls
+        xcodebuild test -workspace tiff-ios.xcworkspace -scheme tiff-ios -destination 'platform=iOS Simulator,OS=13.2.2,name=iPhone 11' ONLY_ACTIVE_ARCH=NO
