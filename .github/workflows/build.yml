@@ -17,4 +17,4 @@ jobs:
     - name: Install
       run: pod install
     - name: Build
-      run: xcodebuild test -workspace tiff-ios.xcworkspace -scheme tiff-ios -destination 'platform=iOS Simulator,OS=latest,name=iPhone 11'
+      run: xcodebuild build-for-testing -workspace tiff-ios.xcworkspace -scheme tiff-ios -destination 'platform=iOS Simulator,OS=latest,name=iPhone 11'
