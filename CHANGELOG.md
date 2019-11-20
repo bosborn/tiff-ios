@@ -6,7 +6,7 @@ Adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.1.3 (TBD)
 
-* TBD
+* TBD 
 
 ## [1.1.2](https://github.com/ngageoint/tiff-ios/releases/tag/1.1.2) (04-03-2019)
 
